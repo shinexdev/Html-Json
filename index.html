@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            margin: 20px;
+        }
+        .content {
+            padding: 20px;
+            border: 1px solid #ddd;
+            margin: 10px auto;
+            width: 80%;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Simple Web App</h1>
+        <div id="content" class="content">
+            Loading content...
+        </div>
+    </div>
+
+    <script>
+        // Fetch JSON data and display it in the content section
+        fetch('data.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                const contentDiv = document.getElementById('content');
+                contentDiv.innerHTML = `<h2>${data.title}</h2><p>${data.message}</p>`;
+            })
+            .catch(error => {
+                const contentDiv = document.getElementById('content');
+                contentDiv.innerHTML = `<p style="color: red;">Failed to load content: ${error.message}</p>`;
+            });
+    </script>
+</body>
+</html>
