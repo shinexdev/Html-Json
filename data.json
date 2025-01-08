@@ -27,93 +27,66 @@
         "away_img": "https://example.com/ac_milan_logo.png"
     },
     {
-        "league": "La Liga",
-        "date": "2025-01-11",
-        "time": "21:00",
-        "home_name": "Real Madrid",
-        "away_name": "Barcelona",
-        "home_img": "https://example.com/real_madrid_logo.png",
-        "away_img": "https://example.com/barcelona_logo.png"
+        "league": "Bundesliga",
+        "date": "2025-01-13",
+        "time": "20:30",
+        "home_name": "Bayern Munich",
+        "away_name": "Borussia Dortmund",
+        "home_img": "https://example.com/bayern_logo.png",
+        "away_img": "https://example.com/dortmund_logo.png"
     },
     {
-        "league": "Serie A",
-        "date": "2025-01-12",
-        "time": "18:00",
-        "home_name": "Juventus",
-        "away_name": "AC Milan",
-        "home_img": "https://example.com/juventus_logo.png",
-        "away_img": "https://example.com/ac_milan_logo.png"
+        "league": "Ligue 1",
+        "date": "2025-01-14",
+        "time": "22:00",
+        "home_name": "Paris Saint-Germain",
+        "away_name": "Marseille",
+        "home_img": "https://example.com/psg_logo.png",
+        "away_img": "https://example.com/marseille_logo.png"
     },
     {
-        "league": "La Liga",
-        "date": "2025-01-11",
-        "time": "21:00",
-        "home_name": "Real Madrid",
-        "away_name": "Barcelona",
-        "home_img": "https://example.com/real_madrid_logo.png",
-        "away_img": "https://example.com/barcelona_logo.png"
-    },
-    {
-        "league": "Serie A",
-        "date": "2025-01-12",
-        "time": "18:00",
-        "home_name": "Juventus",
-        "away_name": "AC Milan",
-        "home_img": "https://example.com/juventus_logo.png",
-        "away_img": "https://example.com/ac_milan_logo.png"
+        "league": "Premier League",
+        "date": "2025-01-15",
+        "time": "16:00",
+        "home_name": "Arsenal",
+        "away_name": "Chelsea",
+        "home_img": "https://example.com/arsenal_logo.png",
+        "away_img": "https://example.com/chelsea_logo.png"
     },
     {
         "league": "La Liga",
-        "date": "2025-01-11",
-        "time": "21:00",
-        "home_name": "Real Madrid",
-        "away_name": "Barcelona",
-        "home_img": "https://example.com/real_madrid_logo.png",
-        "away_img": "https://example.com/barcelona_logo.png"
+        "date": "2025-01-16",
+        "time": "18:00",
+        "home_name": "Atletico Madrid",
+        "away_name": "Sevilla",
+        "home_img": "https://example.com/atletico_logo.png",
+        "away_img": "https://example.com/sevilla_logo.png"
     },
     {
         "league": "Serie A",
-        "date": "2025-01-12",
-        "time": "18:00",
-        "home_name": "Juventus",
-        "away_name": "AC Milan",
-        "home_img": "https://example.com/juventus_logo.png",
-        "away_img": "https://example.com/ac_milan_logo.png"
+        "date": "2025-01-17",
+        "time": "20:00",
+        "home_name": "Napoli",
+        "away_name": "Inter Milan",
+        "home_img": "https://example.com/napoli_logo.png",
+        "away_img": "https://example.com/inter_milan_logo.png"
     },
     {
-        "league": "La Liga",
-        "date": "2025-01-11",
-        "time": "21:00",
-        "home_name": "Real Madrid",
-        "away_name": "Barcelona",
-        "home_img": "https://example.com/real_madrid_logo.png",
-        "away_img": "https://example.com/barcelona_logo.png"
+        "league": "Bundesliga",
+        "date": "2025-01-18",
+        "time": "19:30",
+        "home_name": "RB Leipzig",
+        "away_name": "Wolfsburg",
+        "home_img": "https://example.com/rb_leipzig_logo.png",
+        "away_img": "https://example.com/wolfsburg_logo.png"
     },
     {
-        "league": "Serie A",
-        "date": "2025-01-12",
-        "time": "18:00",
-        "home_name": "Juventus",
-        "away_name": "AC Milan",
-        "home_img": "https://example.com/juventus_logo.png",
-        "away_img": "https://example.com/ac_milan_logo.png"
-    },
-    {
-        "league": "La Liga",
-        "date": "2025-01-11",
-        "time": "21:00",
-        "home_name": "Real Madrid",
-        "away_name": "Barcelona",
-        "home_img": "https://example.com/real_madrid_logo.png",
-        "away_img": "https://example.com/barcelona_logo.png"
-    },
-    {
-        "league": "Serie A",
-        "date": "2025-01-12",
-        "time": "18:00",
-        "home_name": "Juventus",
-        "away_name": "AC Milan",
-        "home_img": "https://example.com/juventus_logo.png",
-        "away_img": "https://example.com/ac_milan_logo.png"
+        "league": "Ligue 1",
+        "date": "2025-01-19",
+        "time": "21:30",
+        "home_name": "Lyon",
+        "away_name": "Nice",
+        "home_img": "https://example.com/lyon_logo.png",
+        "away_img": "https://example.com/nice_logo.png"
     }
 ]
