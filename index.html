@@ -3,36 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Web App</title>
+    <title>Live Matches</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            text-align: center;
+            font-family: Arial, sans-serif;
         }
-        .container {
-            margin: 20px;
+        .player {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 400px;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
         }
         .content {
-            padding: 20px;
-            border: 1px solid #ddd;
-            margin: 10px auto;
-            width: 80%;
+            margin-top: 400px;
+            overflow-y: auto;
+            padding: 10px;
             background-color: #f9f9f9;
+        }
+        .card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .card img {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+        .card-details {
+            flex-grow: 1;
+            margin-left: 15px;
+            text-align: left;
+        }
+        .card-details h3 {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+        .card-details p {
+            margin: 2px 0;
+            font-size: 14px;
+            color: #555;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to the Simple Web App</h1>
-        <div id="content" class="content">
-            Loading content...
-        </div>
+    <div class="player">
+        <h1>Player</h1>
+    </div>
+    <div class="content" id="content">
+        Loading matches...
     </div>
 
     <script>
-        // Fetch JSON data and display it in the content section
+        // Fetch and display match data from JSON
         fetch('data.json')
             .then(response => {
                 if (!response.ok) {
@@ -42,11 +79,25 @@
             })
             .then(data => {
                 const contentDiv = document.getElementById('content');
-                contentDiv.innerHTML = `<h2>${data.title}</h2><p>${data.message}</p>`;
+                contentDiv.innerHTML = '';
+                data.forEach(match => {
+                    const card = document.createElement('div');
+                    card.className = 'card';
+                    card.innerHTML = `
+                        <img src="${match.home_img}" alt="${match.home_name}">
+                        <div class="card-details">
+                            <h3>${match.league}</h3>
+                            <p>${match.date} | ${match.time}</p>
+                            <p>${match.home_name} vs ${match.away_name}</p>
+                        </div>
+                        <img src="${match.away_img}" alt="${match.away_name}">
+                    `;
+                    contentDiv.appendChild(card);
+                });
             })
             .catch(error => {
                 const contentDiv = document.getElementById('content');
-                contentDiv.innerHTML = `<p style="color: red;">Failed to load content: ${error.message}</p>`;
+                contentDiv.innerHTML = `<p style="color: red;">Failed to load matches: ${error.message}</p>`;
             });
     </script>
 </body>

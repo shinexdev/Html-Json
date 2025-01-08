@@ -1,4 +1,29 @@
-{
-    "title": "Hello, World!",
-    "message": "This is content loaded from a JSON file."
-}
+[
+    {
+        "league": "Premier League",
+        "date": "2025-01-10",
+        "time": "19:00",
+        "home_name": "Manchester United",
+        "away_name": "Liverpool",
+        "home_img": "https://example.com/manu_logo.png",
+        "away_img": "https://example.com/liverpool_logo.png"
+    },
+    {
+        "league": "La Liga",
+        "date": "2025-01-11",
+        "time": "21:00",
+        "home_name": "Real Madrid",
+        "away_name": "Barcelona",
+        "home_img": "https://example.com/real_madrid_logo.png",
+        "away_img": "https://example.com/barcelona_logo.png"
+    },
+    {
+        "league": "Serie A",
+        "date": "2025-01-12",
+        "time": "18:00",
+        "home_name": "Juventus",
+        "away_name": "AC Milan",
+        "home_img": "https://example.com/juventus_logo.png",
+        "away_img": "https://example.com/ac_milan_logo.png"
+    }
+]
