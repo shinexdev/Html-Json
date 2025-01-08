@@ -88,5 +88,23 @@
         "away_name": "Nice",
         "home_img": "https://example.com/lyon_logo.png",
         "away_img": "https://example.com/nice_logo.png"
+    },
+    {
+        "league": "Bundesliga",
+        "date": "2025-01-18",
+        "time": "19:30",
+        "home_name": "RB Leipzig",
+        "away_name": "Wolfsburg",
+        "home_img": "https://example.com/rb_leipzig_logo.png",
+        "away_img": "https://example.com/wolfsburg_logo.png"
+    },
+    {
+        "league": "Ligue 1111",
+        "date": "2025-01-19",
+        "time": "21:30",
+        "home_name": "Lyon",
+        "away_name": "Nice",
+        "home_img": "https://example.com/lyon_logo.png",
+        "away_img": "https://example.com/nice_logo.png"
     }
 ]
