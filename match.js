@@ -68,6 +68,26 @@ var match_data = [
       "home_img": "https://mygoaltv.xyz/team/everton.png",
       "away_name": "Peterborough United",
       "away_img": "https://mygoaltv.xyz/team/Peterborough_United.png"
+    },
+    {
+      "id": "08",
+      "league": "FA Cup",
+      "time": "02:15 AM",
+      "date": "Jan 10",
+      "home_name": "Fulham",
+      "home_img": "https://mygoaltv.xyz/team/fulham.png",
+      "away_name": "Watford",
+      "away_img": "https://mygoaltv.xyz/team/Watford.gif"
+    },
+    {
+      "id": "09",
+      "league": "FA Cup",
+      "time": "02:15 AM",
+      "date": "Jan 10",
+      "home_name": "Everton",
+      "home_img": "https://mygoaltv.xyz/team/everton.png",
+      "away_name": "Peterborough United",
+      "away_img": "https://mygoaltv.xyz/team/Peterborough_United.png"
     }
   ];
   
