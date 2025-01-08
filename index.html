@@ -78,23 +78,24 @@
                 return response.json();
             })
             .then(data => {
-                const contentDiv = document.getElementById('content');
-                contentDiv.innerHTML = '';
-                data.forEach(match => {
-                    const card = document.createElement('div');
-                    card.className = 'card';
-                    card.innerHTML = `
-                        <img src="${match.home_img}" alt="${match.home_name}">
-                        <div class="card-details">
-                            <h3>${match.league}</h3>
-                            <p>${match.date} | ${match.time}</p>
-                            <p>${match.home_name} vs ${match.away_name}</p>
-                        </div>
-                        <img src="${match.away_img}" alt="${match.away_name}">
-                    `;
-                    contentDiv.appendChild(card);
-                });
-            })
+    console.log(data); // Check if all 10 items are loaded
+    const contentDiv = document.getElementById('content');
+    contentDiv.innerHTML = '';
+    data.forEach(match => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.innerHTML = `
+            <img src="${match.home_img}" alt="${match.home_name}">
+            <div class="card-details">
+                <h3>${match.league}</h3>
+                <p>${match.date} | ${match.time}</p>
+                <p>${match.home_name} vs ${match.away_name}</p>
+            </div>
+            <img src="${match.away_img}" alt="${match.away_name}">
+        `;
+        contentDiv.appendChild(card);
+    });
+})
             .catch(error => {
                 const contentDiv = document.getElementById('content');
                 contentDiv.innerHTML = `<p style="color: red;">Failed to load matches: ${error.message}</p>`;
